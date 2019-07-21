@@ -25,7 +25,7 @@ public class QuickSort2 {
         }
         
         
-        System.out.println("\nType LinkedList to stack");
+        System.out.println("\nType LinkedList push to stack");
         LinkedList<Integer> list2 = new LinkedList<>();
         // ArrayList<Integer> list2 = new ArrayList<>();
         list2.addAll(list);
@@ -33,11 +33,12 @@ public class QuickSort2 {
         Stack<Integer> stack = new Stack<>();
         while (list2.size()>0) {
             int first=list2.removeFirst();
+            
             stack.add(first);
             System.out.print(first + " ");
         }
 
-        System.out.println("\nstack push pop");
+        System.out.println("\nstack pop");
         while (stack.size()>0) {
             System.out.print(stack.pop() + " ");
         }

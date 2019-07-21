@@ -34,7 +34,7 @@ public class QuickSort2 {
         while (list2.size()>0) {
             int first=list2.removeFirst();
             
-            stack.add(first);
+            stack.push(first);
             System.out.print(first + " ");
         }
 
@@ -43,7 +43,7 @@ public class QuickSort2 {
             System.out.print(stack.pop() + " ");
         }
 
-        System.out.println("\nType LinkedList to Queue");
+        System.out.println("\nType LinkedList to Queue push and poll");
 
         Queue<Integer> queue = new LinkedList<>();
         queue.addAll(list);
